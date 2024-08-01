@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="border border-dark container mt-2 mb-5 bg-light">
+        <nav class="nav nav-justified m-3">
+            <p class="col-5">SR.NO.<span class="text-danger">0000000</span></p>
+            <div class="col-4"><img style="height: 150px; width: 150px; align-items: center;" src="./hicet.jpeg"></div>
+            <div class="col-2 ms-5 text-end"><img style="height: 100px; width: 100px; align-items:right;" src="./qrcode (1).png"></div>
+        </nav>
+        <p class="text-dark text-center pt-3 h1">Hindusthan College of Engineering and Technology</p>
+        <p class="text-center">Association with Technical and Paramedical Education council</p>
+        <p class="text-danger text-center h2">Annual Statement of Mark</p>
+        <div>
+            <div class="row text-center p-5 pb-1">
+                <p class="col-6 border-start border-top border-warning mb-0">Name of the candidate<br><span id="candidateName" class="fw-bold pt-4">(name)</span></p>
+                <p class="col-6 border-start border-top border-end border-warning mb-0">Course name with code<br><span id="courseName" class="fw-bold">Computer Science <br> 21CS54</span></p>
+                <p class="col-3 border-start border-top border-bottom border-warning mt-0">Reg.No<br><span id="regNo" class="fw-bold">(registered number)</span></p>
+                <p class="col-3 border-start border-top border-bottom border-warning mt-0">Enrolled No.<br><span id="enrolledNo" class="fw-bold">(Enrolled Number)</span></p>
+                <p class="col-6 border border-warning mt-0">Authorized Training Center Name with Code<br><span id="centerName" class="fw-bold">(Authorized Training Center Name)</span></p>
+            </div>
+            <div class="p-5 pt-1">
+                <div class="border border-warning row">
+                    <p class="col-2 border-start border-warning mb-0 p-4">Subject<br> code</p>
+                    <p class="col-4 border-end border-warning mb-0 p-4">Subject Name</p>
+                    <p class="col-1 mt-0 mb-2 text-center p-3">Max.<br>Marks</p>
+                    <div class="col-4 border-start border-end border-warning mt-0 text-center">
+                        <p class="col-12 m-0">Marks Obtained<br>In Figures</p>
+                        <div class="row">
+                            <p class="col-4 border-end border-top border-warning m-0 p-2">Theory</p>
+                            <p class="col-4 border-end border-top border-warning m-0 p-2">Practice</p>
+                            <p class="col-4 border-end border-top border-warning m-0 p-2">Total</p>
+                        </div>
+                    </div>
+                    <p class="col-1 mt-0 text-center mb-2 p-3">Total in <br> words</p>
+                </div>
+                <div class="border border-warning row fw-bold">
+                    <p class="col-2 border-start border-warning mb-0 text-start">DFs012-101</p>
+                    <p class="col-4 border-end border-warning mb-0 text-start">Science</p>
+                    <p class="col-1 mt-0 mb-2 text-center">100</p>
+                    <div class="col-4 border-start border-end border-warning mt-0 text-center">
+                        <div class="row">
+                            <p class="col-4 m-0" id="scienceTheory">00</p>
+                            <p class="col-4 m-0" id="sciencePractice">XX</p>
+                            <p class="col-4 m-0" id="scienceTotal">00</p>
+                        </div>
+                    </div>
+                    <p class="col-1 mt-0 mb-2" id="scienceWord">ZEROZERO</p>
+                </div>
+                <div class="border border-warning row fw-bold">
+                    <p class="col-2 border-start border-warning mb-0 text-start">DFs012-102</p>
+                    <p class="col-4 border-end border-warning mb-0 text-start">Calculus</p>
+                    <p class="col-1 mt-0 mb-2 text-center">100</p>
+                    <div class="col-4 border-start border-end border-warning mt-0 text-center">
+                        <div class="row">
+                            <p class="col-4 m-0" id="scienceTheory1">00</p>
+                            <p class="col-4 m-0" id="sciencePractice1">XX</p>
+                            <p class="col-4 m-0" id="scienceTotal1">00</p>
+                        </div>
+                    </div>
+                    <p class="col-1 mt-0 mb-2" id="scienceWord1">ZEROZERO</p>
+                </div>
+                <div class="border border-warning row fw-bold">
+                    <p class="col-2 border-start border-warning mb-0 text-start">DFs012-103</p>
+                    <p class="col-4 border-end border-warning mb-0 text-start">Physics</p>
+                    <p class="col-1 mt-0 mb-2 text-center">100</p>
+                    <div class="col-4 border-start border-end border-warning mt-0 text-center">
+                        <div class="row">
+                            <p class="col-4 m-0" id="scienceTheory2">00</p>
+                            <p class="col-4 m-0" id="sciencePractice2">XX</p>
+                            <p class="col-4 m-0" id="scienceTotal2">00</p>
+                        </div>
+                    </div>
+                    <p class="col-1 mt-0 mb-2" id="scienceWord2">ZEROZERO</p>
+                </div>
+                <div class="border border-warning row fw-bold">
+                    <p class="col-2 border-start border-warning mb-0 text-start">DFs012-104</p>
+                    <p class="col-4 border-end border-warning mb-0 text-start">Chemistry</p>
+                    <p class="col-1 mt-0 mb-2 text-center">100</p>
+                    <div class="col-4 border-start border-end border-warning mt-0 text-center">
+                        <div class="row">
+                            <p class="col-4 m-0" id="scienceTheory3">00</p>
+                            <p class="col-4 m-0" id="sciencePractice3">XX</p>
+                            <p class="col-4 m-0" id="scienceTotal3">00</p>
+                        </div>
+                    </div>
+                    <p class="col-1 mt-0 mb-2" id="scienceWord3">ZEROZERO</p>
+                </div>
+                <div class="border border-warning row fw-bold">
+                    <p class="col-2 border-start border-warning mb-0 text-start">DFs012-105</p>
+                    <p class="col-4 border-end border-warning mb-0 text-start">Python</p>
+                    <p class="col-1 mt-0 mb-2 text-center">100</p>
+                    <div class="col-4 border-start border-end border-warning mt-0 text-center">
+                        <div class="row">
+                            <p class="col-4 m-0" id="scienceTheory4">00</p>
+                            <p class="col-4 m-0" id="sciencePractice4">XX</p>
+                            <p class="col-4 m-0" id="scienceTotal4">00</p>
+                        </div>
+                    </div>
+                    <p class="col-1 mt-0 mb-2" id="scienceWord4">ZEROZERO</p>
+                </div>
+                
+                <div class="border border-warning row">
+                    <p class="col-12 ps-4"> Grand Total <strong class="ps-2"><span id="grandTotal">000</span></strong> <br> In Words <strong class="ps-4"><span id="totalInWords">Zero Hundred Zero Zero</span></strong> </p>
+                </div>
+                <div class="row mb-0 text-center">
+                    <p class="col-4 border border-warning p-2 mb-0">Month and Year of Examination</p>
+                    <p class="col-3 border border-warning p-2 mb-0">No. of Subject Offered</p>
+                    <p class="col-1 border border-warning p-2 mb-0">Result</p>
+                    <p class="col-2 border border-warning p-2 mb-0">Percentage</p>
+                    <p class="col-2 border border-warning p-2 mb-0">Grade</p>
+                </div>
+                <div class="row text-center fw-bold mt-0 mb-0">
+                    <p class="col-4 border border-warning p-2 mt-0" id="examDate">May 2020</p>
+                    <p class="col-3 border border-warning p-2 mt-0" id="subjectsOffered">T5+P3=8</p>
+                    <p class="col-1 border border-warning p-2 mt-0" id="result">PASS</p>
+                    <p class="col-2 border border-warning p-2 mt-0" id="percentage">00.00%</p>
+                    <p class="col-2 border border-warning p-2 mt-0" id="grade">(Grade)</p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="ms-5 col-8 pt-5">Date:<span class="fw-bold" id="resultDate">(Date of Result)</span></p>
+                <div class="col-3 ms-5">
+                    <p class="fw-bold text-center mb-0">(Signature of Deputy<br>Controller of Examination)</p>
+                    <p class="text-success text-center">Deputy Controller of Examination</p>
+                </div>
+            </div>
+            <p class="text-center">Subject marked with &#9733; indicates Exemption </p>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
